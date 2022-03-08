@@ -18,7 +18,7 @@
       </ul>
     <div>
 <!--      <a href="--><?php //echo base_url()."Member/edit/".$this->ion_auth->user()->row()->member_id;?><!--"  class="btn btn-info"><i class="fa fa-user"></i> আমার প্রোফাইল</a>-->
-           &nbsp;<a href="<?php echo base_url()."Member/change_password/";?>" class="btn btn-success"><i class="fa fa-list"></i> পাসওয়ার্ড পরিবর্তন করুন</a>
+           <!-- &nbsp;<a href="<?php echo base_url()."Member/change_password/";?>" class="btn btn-success"><i class="fa fa-list"></i> পাসওয়ার্ড পরিবর্তন করুন</a> -->
             &nbsp;<a  href="<?php echo base_url()."auth/logout/";?>" class="btn btn-danger"><i class="fa fa-power-off" aria-hidden="true"></i> লগআউট</a>
     </div>
     </nav>

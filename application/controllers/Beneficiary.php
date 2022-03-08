@@ -63,7 +63,10 @@
 			$crud->displayAs('upazila_id', 'আবেদনকারীর উপজেলা');
 			$crud->displayAs('address', 'আবেদনকারীর ঠিকানা');
 			$crud->displayAs('reason', 'কি কারণে সাহায্য প্রয়োজন');
-            $crud->columns(['name', 'father_name', 'identity_type', 'identity_no', 'mobile_no', 'district_id', 'updated_at']);
+			$crud->displayAs('updated_at', 'তথ্য পরিবর্তনের তারিখ');
+			$crud->displayAs('created_at', 'তথ্য তৈরির তারিখ');
+			$crud->displayAs('updated_by', 'ব্যবহারকারী');
+            $crud->columns(['name', 'identity_no', 'mobile_no', 'district_id', 'upazila_id', 'reason', 'updated_at']);
 			$crud->fieldType('identity_type', 'dropdown_search', [
 				'1' => 'National ID',
 				'2' => 'Birth Registration'

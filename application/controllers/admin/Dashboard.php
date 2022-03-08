@@ -15,9 +15,9 @@ class Dashboard extends Admin_Base_Controller {
 			$this->toastr->error('You do not have permission to see administrator dashboard');
 			redirect($_SERVER['HTTP_REFERER']);
 		}
-		$this->data['approved'] = $this->Beneficiary_model->approved();
-        $this->data['rejected'] = $this->Beneficiary_model->rejected();
-        $this->data['pending'] = $this->Beneficiary_model->pending();
+		// $this->data['approved'] = $this->Beneficiary_model->approved();
+        // $this->data['rejected'] = $this->Beneficiary_model->rejected();
+        // $this->data['pending'] = $this->Beneficiary_model->pending();
         $this->data['all'] = $this->Beneficiary_model->all();
 		$this->data['title'] = 'Dashboard';
 		$this->data['breadcrumbs'] = 'Dashboard';

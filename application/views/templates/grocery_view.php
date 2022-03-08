@@ -16,7 +16,7 @@
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <div class="d-inline-block">
-           &nbsp;<a href="<?php echo base_url()."Member/change_password/";?>" class="btn btn-success"><i class="fa fa-list"></i> পাসওয়ার্ড পরিবর্তন করুন</a>
+           <!-- &nbsp;<a href="<?php echo base_url()."Member/change_password/";?>" class="btn btn-success"><i class="fa fa-list"></i> পাসওয়ার্ড পরিবর্তন করুন</a> -->
             &nbsp;<a  href="<?php echo base_url()."auth/logout/";?>" class="btn btn-danger"><i class="fa fa-power-off" aria-hidden="true"></i> লগআউট</a>
         </div>
       </ul>
