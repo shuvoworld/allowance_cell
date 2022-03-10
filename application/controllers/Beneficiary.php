@@ -63,13 +63,14 @@
 			$crud->displayAs('upazila_id', 'আবেদনকারীর উপজেলা');
 			$crud->displayAs('address', 'আবেদনকারীর ঠিকানা');
 			$crud->displayAs('reason', 'কি কারণে সাহায্য প্রয়োজন');
+			$crud->displayAs('year', 'কোন সালে অনুদান দেয়া হয়েছে');
 			$crud->displayAs('updated_at', 'তথ্য পরিবর্তনের তারিখ');
 			$crud->displayAs('created_at', 'তথ্য তৈরির তারিখ');
 			$crud->displayAs('updated_by', 'ব্যবহারকারী');
-            $crud->columns(['name', 'identity_no', 'mobile_no', 'district_id', 'upazila_id', 'reason', 'updated_at']);
+            $crud->columns(['name', 'identity_no', 'mobile_no', 'district_id', 'upazila_id', 'reason', 'year', 'updated_at']);
 			$crud->fieldType('identity_type', 'dropdown_search', [
-				'1' => 'National ID',
-				'2' => 'Birth Registration'
+				'1' => 'জাতীয় পরিচয়পত্র',
+				'2' => 'জন্মসনদ'
 			]);
 
 			$crud->fieldType('occupation', 'dropdown_search', [
@@ -83,6 +84,13 @@
 				'study' => 'লেখাপড়া',
 				'financial' => 'আর্থিক',
 				'treatment' => 'চিকিৎসা'
+			]);
+
+			$crud->fieldType('year', 'dropdown_search', [
+				'2021' => '২০২১',
+				'2022' => '২০২২',
+				'2023' => '২০২৩',
+				'2024' => '২০২৪'
 			]);
 
 			$crud->setTexteditor([]);

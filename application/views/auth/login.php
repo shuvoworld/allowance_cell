@@ -22,7 +22,7 @@
 
 <body class="hold-transition login-page">
   <div class="login-box">
-    <div class="info-box mb-3 bg-success">
+    <div class="info-box mb-3 bg-warning">
       <div class="info-box-content login-logo" style="text-align: center">নির্যাতিত, দুঃস্থ মহিলা ও শিশু কল্যাণ তহবিল থেকে অনুদান মঞ্জুরীর ডাটাবেজ</div>
     </div>
     <!-- /.login-logo -->
@@ -62,9 +62,7 @@
   <!-- /.login-box -->
 
 <br/>
-  <div style="margin-right: -180px; margin-top: 80px;">
-	  <img src="<?php echo base_url(); ?>assets/uploads/bg.png" width="300" />
-  </div>
+
   <!-- jQuery -->
   <script src="<?php echo base_url(); ?>assets/adminlte/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->

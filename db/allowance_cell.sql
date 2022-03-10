@@ -3,15 +3,15 @@
 
  Source Server         : localhost
  Source Server Type    : MySQL
- Source Server Version : 100422
+ Source Server Version : 100411
  Source Host           : localhost:3306
  Source Schema         : allowance_cell
 
  Target Server Type    : MySQL
- Target Server Version : 100422
+ Target Server Version : 100411
  File Encoding         : 65001
 
- Date: 07/03/2022 22:51:41
+ Date: 10/03/2022 15:33:52
 */
 
 SET NAMES utf8mb4;
@@ -36,6 +36,7 @@ CREATE TABLE `beneficiaries`  (
   `address` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
   `occupation` enum('housewife','business','service','others') CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
   `reason` enum('study','financial','pending') CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `year` int(10) NULL DEFAULT NULL,
   `created_at` datetime(0) NULL DEFAULT NULL,
   `updated_at` datetime(0) NULL DEFAULT NULL,
   `updated_by` int(10) NULL DEFAULT NULL,
@@ -1475,7 +1476,7 @@ CREATE TABLE `users`  (
 -- ----------------------------
 -- Records of users
 -- ----------------------------
-INSERT INTO `users` VALUES (1, '127.0.0.1', NULL, '$2y$12$hrZwxV6VW7TTghlJ1Uxs2udlrdVmp2aoYK5BcoPS0w1CV/3BT2Wdq', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1646670854, 1, 320);
+INSERT INTO `users` VALUES (1, '127.0.0.1', NULL, '$2y$12$hrZwxV6VW7TTghlJ1Uxs2udlrdVmp2aoYK5BcoPS0w1CV/3BT2Wdq', 'admin@admin.com', NULL, '', NULL, NULL, NULL, NULL, NULL, 1268889823, 1646903824, 1, 320);
 INSERT INTO `users` VALUES (396, '127.0.0.1', 'ds_cell@mowca.gov.bd', '$2y$12$pLucgYiPpz3w62JdbUuJn.QOp5IoE2plepaAQ3OjKMLSX5q4cln2G', 'ds_cell@mowca.gov.bd', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1640844798, 1640844873, 1, 0);
 
 -- ----------------------------
